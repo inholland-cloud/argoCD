@@ -8,8 +8,8 @@ spec:
     namespace: paas-group3-showcase
   project: default
   source:
-    path: simpleSlideShow/overlays/test/
-    repoURL: https://github.com/InHolland-Cloud-Minor-2526/simpleSlideshow-deploy.git
+    path: overlays/test/
+    repoURL: https://github.com/inholland-cloud/fotoshow-deploy.git
     targetRevision: main
   syncPolicy:
     automated:
