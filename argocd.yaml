@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-slideshow-test
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: paas-group3-showcase
+  project: default
+  source:
+    path: simpleSlideShow/overlays/test/
+    repoURL: https://github.com/InHolland-Cloud-Minor-2526/simpleSlideshow-deploy.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
